@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>경력 기술서 PDF 보기</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fafafa;
+      margin: 20px;
+    }
+    .pdf-container {
+      width: 80%;
+      height: 800px;
+      margin: 0 auto;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <h2 style="text-align: center;">주요 경험 포트폴리오</h2>
+
+  <!-- 방법 1: iframe -->
+  <div class="pdf-container">
+    <iframe src="file/resume/resume.pdf" width="100%" height="100%"></iframe>
+    <embed src="file/resume/resume.pdf" type="application/pdf" width="100%" height="100%">
+    <!-- <iframe src="C:\portfolio\file\resume\resume.pdf" width="100%" height="100%"></iframe> -->
+  </div>
+
+  <!-- 방법 2: embed -->
+  <!--
+  <div class="pdf-container">
+    <embed src="경력기술서.pdf" type="application/pdf" width="100%" height="100%">
+  </div>
+  -->
+
+  <!-- 방법 3: object -->
+  <!--
+  <div class="pdf-container">
+    <object data="경력기술서.pdf" type="application/pdf" width="100%" height="100%">
+      <p>PDF를 보려면 <a href="경력기술서.pdf">여기</a>를 클릭하세요.</p>
+    </object>
+  </div>
+  -->
+</body>
+</html>
